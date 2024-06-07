@@ -19,166 +19,123 @@
     font-style: normal;
 }
 
-* {margin: 0;
+* {
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
 
 body {
     background-color: white;
     font-family: 'Hero', 'Times New Roman', sans-serif;
     font-weight: 400;
-    padding-top: 73px; 
-    
+    padding-top: 73px;
 }
 
-
-
-
-
-
-
-
-
 header {
-    position: fixed; 
-    top: 0; 
-    width: 100%; 
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 0 20%; */
     background-color: rgba(255, 255, 255, 0.90);
-    z-index: 1; 
-    backdrop-filter: blur(10px); 
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+}
 
-}
-main{
-    width: 100%;
+.navheader {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; 
-    flex-direction: column;
+    flex: 1;
 }
-article{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; 
-    flex-direction: column;
-}
-.navheader{
-    margin-left: 15%;
-}
+
 nav ul {
     list-style-type: none;
     display: flex;
-    
 }
 
 nav ul li {
     margin-left: 35px;
     font-size: 18px;
 }
+
 nav ul li a {
     text-decoration: none;
     color: black;
 }
 
+.headlogo {
+    margin: 0 20px;
+}
+
 .headlogo img {
     width: 70px;
     height: auto;
-    margin: 10px 0;
 }
 
-.headlogo {
-    padding: 0%;
-    margin-right: 10%;
+.authorization {
+    display: flex;
 }
 
 .authorization button {
-    background-color: rgb(0,64,128);
+    background-color: rgb(0, 64, 128);
     color: white;
     border: none;
     border-radius: 50px;
-    padding: 10% 20%;
+    padding: 10px 20px;
     cursor: pointer;
     font-size: 15px;
 }
-.authorization button a{
+
+.authorization button a {
     text-decoration: none;
     color: white;
 }
 
-
-.overwelcomeimg button a{
-    text-decoration: none;
-    color: white;
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 20px;
 }
-.authorization{
-    margin-right: 20%;
-}
 
-
-
- 
- 
- 
-  .recording {
+.recording {
     width: 80%;
-    position: relative;
-    text-align: left; 
     margin-top: 100px;
-    
-    top: 0px;
-    left: 10px;
-    
 }
 
 .recording h1 {
-    
-    width: auto;
-    margin-bottom: 10px; /* Отступ снизу текста блока recording */
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
-.Dat{
-    width: 20%;
+.recording p {
+    margin-bottom: 30px;
 }
- 
-
 
 .table {
-    position: relative;
-    
+    width: 100%;
+    overflow-x: auto;
 }
 
 .table table {
-    margin-top: 30px;
-    border-collapse: separate;
     width: 100%;
-    border: 1px solid #ccc; /* Добавляем серую рамку */
-    border-radius: 10px; /* Добавляем закругленные углы */
-    margin-bottom: 60px;
-    
+    border-collapse: separate;
+    border: 1px solid #ccc;
+    border-radius: 10px;
 }
 
 .table th, .table td {
-    border: none;
     padding: 15px;
-    
-    
+    text-align: left;
 }
 
 .table th {
-    background-color: #ffffff;
-    
-}
-
-.table p1, .table p2 {
-    margin: 0;
-    
+    background-color: #f4f4f4;
 }
 
 .table button {
@@ -198,132 +155,13 @@ nav ul li a {
     outline: none;
 }
 
-.Zap{
-    width: 13%;
-}
-
-
-table img {
-    
+.table img {
     float: left;
     max-width: 40px;
     max-height: 40px;
-    margin-right: 20px; /* Add margin-right to create space between image and text */
+    margin-right: 20px;
     border-radius: 10px;
-
 }
-
-
-
-
-/*.past {
-    width: 80%;
-    position: relative;
-    text-align: left; 
-    margin-bottom: 20px;
-    z-index: 1;
-    top: 0px;
-    left: 10px;
-}
-
-.past h1 {
-    width: auto;
-    margin-bottom: 10px; /* Отступ снизу текста блока recording 
-}
-
-
-
-.table1 {
-    position: relative;
-}
-
-.table1 table {
-    margin-top: 20px;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-.table1 th, .table1 td {
-    border: 1px solid black;
-    padding: 15px;
-}
-
-.table1 th {
-    background-color: #ffffff;
-}
-
-.table1 p1, .table p2 {
-    margin: 0;
-}
-
-*/
-
-article{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; 
-    flex-direction: column;
-}
-.navheader{
-    margin-left: 15%;
-}
-nav ul {
-    list-style-type: none;
-    display: flex;
-    
-}
-
-nav ul li {
-    margin-left: 35px;
-    font-size: 18px;
-}
-nav ul li a {
-    text-decoration: none;
-    color: black;
-}
-
-.headlogo img {
-    width: 70px;
-    height: auto;
-    margin: 10px 0;
-}
-
-.headlogo {
-    padding: 0%;
-    margin-right: 10%;
-}
-
-.authorization button {
-    background-color: rgb(0,64,128);
-    color: white;
-    border: none;
-    border-radius: 50px;
-    padding: 10% 20%;
-    
-    font-size: 15px;
-}
-.authorization button a{
-    text-decoration: none;
-    color: white;
-}
-
-
-.overwelcomeimg button a{
-    text-decoration: none;
-    color: white;
-}
-.authorization{
-    margin-right: 20%;
-}
-
-
-
-
-
-
-
 
 footer {
     display: flex;
@@ -331,16 +169,49 @@ footer {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 200px;
-    margin-bottom: 100px;
+    margin: 50px 0;
 }
-footer img{
+
+footer img {
     height: 30px;
     width: auto;
-
     margin-bottom: 20px;
 }
 
-footer p{
+footer p {
     color: rgb(75, 75, 75);
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .navheader {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .authorization {
+        justify-content: center;
+    }
+
+    .recording {
+        width: 100%;
+    }
+
+    .table img {
+        display: block;
+        margin: 0 auto 10px;
+    }
 }
