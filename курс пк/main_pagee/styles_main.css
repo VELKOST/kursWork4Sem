@@ -29,9 +29,13 @@ body {
     font-family: 'Hero', 'Times New Roman', sans-serif;
     font-weight: 400;
     padding-top: 150px;
+    width: 100%;
 }
-
-header {
+header {width: 100%;}
+nav {
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -41,21 +45,28 @@ header {
     background-color: rgba(255, 255, 255, 0.90);
     z-index: 1;
     backdrop-filter: blur(10px);
-    padding: 10px;
+    
+    flex-wrap: wrap;
 }
-
-.navheader {
+.navigation {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     display: flex;
-    flex: 1;
 }
 
 nav ul {
+    
     list-style-type: none;
     display: flex;
 }
-
-nav ul li {
+.centerli{
     margin-left: 35px;
+    margin-right: 35px;
+    
+}
+nav ul li {
+
     font-size: 18px;
 }
 
@@ -93,9 +104,9 @@ nav ul li a {
     text-decoration: none;
     color: white;
 }
+/*----------------------------------------------------------------*/
 
-
-.overwelcomeimg button a{
+/* .overwelcomeimg button a{
     text-decoration: none;
     color: white;
 }
@@ -305,7 +316,7 @@ nav ul li a {
 .galleryimg {
     position: relative;
     margin-right: 20px; 
-    /* width: 100%; */
+
 }
 
 .galleryimg img {
@@ -440,4 +451,25 @@ footer img{
 
 footer p{
     color: rgb(75, 75, 75);
+} */
+
+
+
+@media (max-width: 777px) {
+    .navheader {
+        flex-direction: column; /* Изменяет направление основной оси на колонку */
+    }
+    .navigation {
+        flex-direction: row; /* Сохраняет направление основной оси списка как строку */
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .centerli{
+        margin-left: 20px;
+        margin-right: 20px;
+        
+    }
+    .authorization{
+        margin-top: 10px;
+    }
 }
