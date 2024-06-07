@@ -1,0 +1,493 @@
+@font-face {
+    font-family: 'Hero';
+    src: url('../fonts/Hero-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hero';
+    src: url('../fonts/Hero-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hero';
+    src: url('../fonts/Hero-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: 'Hero', 'Times New Roman', sans-serif;
+    font-weight: 400;
+    padding-top: 10%;
+}
+
+header {
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.90);
+    z-index: 1; 
+    backdrop-filter: blur(10px); 
+    padding: 2%;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    flex-direction: column;
+}
+
+.navheader {
+    margin-left: 5%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    margin-left: 5%;
+    font-size: 1.8rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.headlogo img {
+    width: 10%;
+    height: auto;
+}
+
+.authorization button {
+    background-color: rgb(0,64,128);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 1.5% 3%;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.authorization button a {
+    text-decoration: none;
+    color: white;
+}
+
+.welcome {
+    position: relative;
+    width: 100%;
+}
+
+.welcome img {
+    width: 100%;
+    height: auto;
+}
+
+.overwelcomeimg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+}
+
+.overwelcomeimg h1 {
+    margin-bottom: 2%;
+    color: white;
+    font-size: 3rem; 
+}
+
+.overwelcomeimg button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 2% 5%;
+    font-size: 1.5rem;
+}
+
+.aboutus {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: linear-gradient(to right, rgb(0,26,77), rgb(0,47,107));
+    color: white; 
+    margin-top: 10%; 
+    margin-bottom: 10%; 
+    width: 90%;
+    border-radius: 25px; 
+    padding: 5%;
+    flex-wrap: wrap;
+}
+
+.textbox img {
+    height: 25px;
+    width: auto;
+}
+
+.textbox1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.textbox {
+    display: flex;
+    flex-direction: row;
+}
+
+.mx700 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.aboutusimgplus h2 {
+    margin-bottom: 2%;
+    color: white;
+    font-size: 2.5rem; 
+}
+
+.aboutusimgplus p {
+    color: rgb(211, 211, 211);
+    font-size: 1.2rem; 
+    line-height: 1.5;
+    margin-bottom: 2%;
+}
+
+.aboutusimgplus span {
+    color: rgb(211, 211, 211);
+    font-size: 1.2rem; 
+    line-height: 1.5;
+}
+
+.aboutustext {
+    margin-bottom: 5%;
+}
+
+.team {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.ourteam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ourteam h2 {
+    font-size: 3rem; 
+    margin-bottom: 2%;
+}
+
+.ourteam p {
+    font-size: 1.5rem; 
+    margin-bottom: 5%;
+}
+
+.teamimg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 90%;
+}
+
+.teamimg img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+}
+
+.aboutpeople p {
+    color: rgb(75, 75, 75);
+    font-size: 1.2rem; 
+    line-height: 1.5;
+    margin-bottom: 2%;
+}
+
+.aboutpeople h3 {
+    font-size: 1.5rem; 
+}
+
+.corner {
+    width: 45%; 
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.corner img {
+    border-radius: 15px; 
+    width: 100%; 
+    height: auto; 
+}
+
+.gallery {
+    width: 80%;
+    margin-top: 10%;
+}
+
+.galleryimgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.galup h2 {
+    font-size: 3rem; 
+    margin-bottom: 2%;
+}
+
+.galup p {
+    font-size: 1.5rem; 
+    margin-bottom: 5%;
+}
+
+.galleryimg {
+    position: relative;
+    width: 45%;
+    margin-bottom: 5%;
+}
+
+.galleryimg img {
+    width: 100%;
+    height: auto;
+}
+
+.overgallery {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; 
+}
+
+.callus {
+    width: 80%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.callus img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+.callus h2 {
+    font-size: 3rem; 
+    margin-bottom: 2%;
+}
+
+.callus p {
+    font-size: 1.5rem; 
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+.callus h3 {
+    font-size: 1.5rem; 
+    margin-bottom: 2%;
+}
+
+.contactinfo p {
+    font-size: 1.5rem; 
+}
+
+.feedback {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.bar {
+    width: 100%;
+    height: 20%;
+    background-color: rgb(0,32,87);
+    position: absolute;
+    z-index: 1;
+}
+
+.feedback img[alt="feedback"], .feedback .feedbacktext {
+    position: relative;
+    z-index: 2;
+}
+
+.feedback img[alt="feedback"] {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.feedback img[alt="Apostrophe"] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 20%;
+    width: auto;
+    z-index: 2;
+}
+
+.feedbacktext {
+    color: white;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.feedbacktext h1 {
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+
+.feedbacktext h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1%;
+}
+
+.feedbacktext p {
+    font-size: 1.2rem;
+    color: rgb(211, 211, 211);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+footer img {
+    height: 3%;
+    width: auto;
+    margin-bottom: 2%;
+}
+
+footer p {
+    color: rgb(75, 75, 75);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-top: 5%;
+    }
+
+    .authorization button {
+        padding: 3% 5%;
+        font-size: 1.2rem;
+    }
+
+    .overwelcomeimg h1 {
+        font-size: 2rem;
+    }
+
+    .overwelcomeimg button {
+        padding: 3% 5%;
+        font-size: 1.2rem;
+    }
+
+    .aboutus {
+        padding: 5%;
+    }
+
+    .aboutusimgplus h2 {
+        font-size: 2rem;
+    }
+
+    .aboutusimgplus p, .aboutusimgplus span {
+        font-size: 1rem;
+    }
+
+    .ourteam h2 {
+        font-size: 2rem;
+    }
+
+    .ourteam p {
+        font-size: 1.2rem;
+    }
+
+    .aboutpeople p, .aboutpeople h3 {
+        font-size: 1rem;
+    }
+
+    .galup h2 {
+        font-size: 2rem;
+    }
+
+    .galup p {
+        font-size: 1.2rem;
+    }
+
+    .overgallery h3, .overgallery p {
+        font-size: 1rem;
+    }
+
+    .callus h2 {
+        font-size: 2rem;
+    }
+
+    .callus p, .callus h3, .contactinfo p {
+        font-size: 1.2rem;
+    }
+
+    .feedbacktext h1 {
+        font-size: 1.5rem;
+    }
+
+    .feedbacktext h2 {
+        font-size: 1.2rem;
+    }
+
+    .feedbacktext p {
+        font-size: 1rem;
+    }
+
+    .headlogo img {
+        width: 20%;
+    }
+}
