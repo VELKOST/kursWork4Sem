@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <script src="jquery.js"></script>
-    <script src="main.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Яхт-клуб Московского Политеха</title>
@@ -25,7 +23,7 @@
             <!-- <div class="authorization">
                 <button><a href="#">Авторизоваться</a></button>
             </div> -->
-        </nav>
+        </nav>  
 
 
 </header>
@@ -45,10 +43,37 @@
             <p>15.05.2023</p>
             <p>20.06.2023</p>
             <p>10.07.2023</p>
+
+            <!-- /*-------------------------------------------------------------------------------------NEW-------------------------------------------------------------------------------*/-->
         </div>
-        <div class="profilephoto">
-            <img src="imgs/main/gallery/proffoto.jpg" alt="Фото профиля" />
-        </div>
+            <div class="profilephoto">
+                <div class="photo-container">
+                    <img id="userPhoto" src="imgs\main\gallery\default.jpg" alt="User photo">
+                </div>
+                
+
+                <div class="buttons">
+                    <button id="changePassword">Сменить пароль</button>
+                    <div id="modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <form id="passwordForm">
+                            <label for="oldPassword">Старый пароль:</label><br>
+                            <input type="password" id="oldPassword" name="oldPassword"><br>
+                            <label for="newPassword">Новый пароль:</label><br>
+                            <input type="password" id="newPassword" name="newPassword"><br>
+                            <input type="submit" value="Сменить">
+                            </form>
+                        </div>
+                    </div>
+
+                    <button id="changePhoto">Сменить фото</button>
+
+                    <input type="file" id="photoUpload" style="display: none;" accept="image/*">
+                </div>
+                
+            </div> 
+        <!-- /*-------------------------------------------------------------------------------------NEW-------------------------------------------------------------------------------*/-->
     </main>
 
     <footer>
@@ -61,5 +86,9 @@
             <p>© 2024 Яхт клуб Московского Политеха. Все права защищены.</p>
         </div>
     </footer>
+    <!-- /*-------------------------------------------------------------------------------------NEW-------------------------------------------------------------------------------*/-->
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
+    <!-- /*-------------------------------------------------------------------------------------NEW-------------------------------------------------------------------------------*/-->
 </body>
 </html>

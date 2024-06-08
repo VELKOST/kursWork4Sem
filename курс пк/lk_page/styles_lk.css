@@ -161,6 +161,78 @@ footer p {
     color: rgb(75, 75, 75);
 }
 
+
+
+ /*-------------------------------------------------------------------------------------NEW-------------------------------------------------------------------------------*/
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  .photo-container {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  #userPhoto {
+    position: absolute;
+    left: -9999px;
+    right: -9999px;
+    top: -9999px;
+    bottom: -9999px;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+  }
+
+.buttons {
+    margin-top: 20px;
+}
+button {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 200px;
+  }
+  
+  button:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .profilephoto{
+    display: flex;
+    flex-direction: column;
+  }
+
+ /*-------------------------------------------------------------------------------------NEW-------------------------------------------------------------------------------*/
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -195,10 +267,10 @@ footer p {
 }
 @media (max-width: 777px) {
     .navheader {
-        flex-direction: column; /* Изменяет направление основной оси на колонку */
+        flex-direction: column; 
     }
     .navigation {
-        flex-direction: row; /* Сохраняет направление основной оси списка как строку */
+        flex-direction: row; 
         margin-top: 10px;
         margin-bottom: 10px;
     }
